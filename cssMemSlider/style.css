@@ -14,16 +14,16 @@ body{
     height: 100vh;
 }
 .meme1{
-    background-image: url(/cssMemSlider/src/1.jpg);
+    background-image: url(src/1.jpg);
 }
 .meme2{
-    background-image: url(/cssMemSlider/src/2.jpg);
+    background-image: url(src/2.jpg);
 }
 .meme3{
-    background-image: url(/cssMemSlider/src/3.jpg);
+    background-image: url(src/3.jpg);
 }
 .meme4{
-    background-image: url(/cssMemSlider/src/4.jpg);
+    background-image: url(src/4.jpg);
 }
 .wrapper{
    height: 72%; 
