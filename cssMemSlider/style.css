@@ -26,14 +26,15 @@ body{
     background-image: url(src/4.jpg);
 }
 .wrapper{
-   height: 72%; 
+   height: 73%; 
    /* width: 60%; */
-   width: 60rem;
+   width: 65rem;
    background-color: #6f686dff;
 }
 .memes-wrapper{
     width: 25%;
     transition: .6s;
+    /* padding-top: 3%; */
 }
 .memes{
     width: 100%;
@@ -97,29 +98,30 @@ input{
     display: none;
 }
 #meme1:checked ~ .content .first{
-    margin-left: 0% ;
+    transform: translate(0);
 }
-#meme2:checked ~ .content .first{
-    margin-left: -25% ;
+#meme2:checked ~ .content .memes-wrapper{
+    transform: translate(-100%) ;
 }
-#meme3:checked ~ .content .first{
-    margin-left: -50% ;
+#meme3:checked ~ .content .memes-wrapper{
+    transform: translate(-200%) ;
 }
-#meme4:checked ~ .bottom .text-content .text-slider .text1{
-    margin-left: -337% ;
+#meme4:checked ~ .content .memes-wrapper{
+    transform: translate(-300%) ;
 }
-#meme3:checked ~ .bottom .text-content .text-slider .text1{
-    margin-left: -133% ;
+#meme4:checked ~ .bottom .text-content .text-slider .text{
+    transform: translate(-300%) ;
 }
-#meme2:checked ~ .bottom .text-content .text-slider .text1{
-    margin-left: -40% ;
+#meme3:checked ~ .bottom .text-content .text-slider .text{
+    transform: translate(-200%) ;
 }
-#meme1:checked ~ .bottom .text-content .text-slider .text1{
-    margin-left: 0% ;
+#meme2:checked ~ .bottom .text-content .text-slider .text{
+    transform: translate(-100%) ;
 }
-#meme4:checked ~ .content .first{
-    margin-left: -75% ;
+#meme1:checked ~ .bottom .text-content .text-slider .text{
+    transform: translate(0) ;
 }
+
 #meme1:checked ~ .bottom .controls .button .one{
    background-color: rgb(19, 119, 207);
 }
@@ -145,3 +147,22 @@ input{
    background-color: rgb(0, 32, 61);
 }
 
+@media (max-width: 1050px) {
+    .wrapper{
+        height: 45%; 
+        width: 40rem;
+    }
+}
+@media (max-width: 740px) {
+    .wrapper{
+        width: 27rem;
+        height: 31%;
+    }
+    .bottom{
+    flex-direction: column-reverse;
+    align-items: center;
+    }
+}
+.text-slider{
+    padding-top: 0.3rem;
+}
