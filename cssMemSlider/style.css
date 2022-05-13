@@ -5,7 +5,7 @@
 }
 body{
     background-color: #04080fff;
-    color: #f1723aff;
+    color: #ffffff;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -14,7 +14,7 @@ body{
     height: 100vh;
 }
 .meme1{
-    background-image: url(src/1.jpg);
+    background-image: url(src/6.jpg);
 }
 .meme2{
     background-image: url(src/2.jpg);
@@ -27,20 +27,20 @@ body{
 }
 .wrapper{
    height: 73%; 
-   /* width: 60%; */
-   width: 65rem;
+   width: 100%;
    background-color: #6f686dff;
 }
 .memes-wrapper{
     width: 25%;
     transition: .6s;
-    /* padding-top: 3%; */
+    background: black;
 }
 .memes{
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
 }
 .content{
     display: flex;
@@ -50,13 +50,15 @@ body{
 .wrapper-container{
     height: 90%;
     width: 90%;
-    padding: 4% 0%;
     margin: 0 auto;
     overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
 }
 .button{
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
     cursor: pointer;
 }
 .controls{
@@ -65,10 +67,11 @@ body{
 .bottom{
     display: flex;
     justify-content: space-between;
+    padding-top: 1rem;
 }
 .border{
-    width: 1rem;
-    height: 1rem;
+    width: 1.2rem;
+    height: 1.2rem;
     background: slategray;
     margin: 0.3rem;
     cursor: pointer;
@@ -81,6 +84,7 @@ body{
 .text{
     width: 100%;
     transition: .6s;
+    text-align: start;
 }
 .text-content{
     overflow: hidden;
@@ -146,23 +150,14 @@ input{
 #meme4:checked ~ .bottom .controls .button .for:hover{
    background-color: rgb(0, 32, 61);
 }
-
-@media (max-width: 1050px) {
-    .wrapper{
-        height: 45%; 
-        width: 40rem;
-    }
-}
-@media (max-width: 740px) {
-    .wrapper{
-        width: 27rem;
-        height: 31%;
-    }
+ @media (max-width: 425px) {
     .bottom{
     flex-direction: column-reverse;
-    align-items: center;
     }
-}
-.text-slider{
-    padding-top: 0.3rem;
+    .controls{
+    margin: 0 auto;
+    }
+    .wrapper{
+        width: 90%;
+    }
 }
