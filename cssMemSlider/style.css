@@ -14,16 +14,16 @@ body{
     height: 100vh;
 }
 .meme1{
-    background-image: url(src/6.jpg);
+    background-image: url(src/1.png);
 }
 .meme2{
-    background-image: url(src/2.jpg);
+    background-image: url(src/2.png);
 }
 .meme3{
-    background-image: url(src/3.jpg);
+    background-image: url(src/3.png);
 }
 .meme4{
-    background-image: url(src/4.jpg);
+    background-image: url(src/4.png);
 }
 .wrapper{
    height: 73%; 
@@ -85,6 +85,7 @@ body{
     width: 100%;
     transition: .6s;
     text-align: start;
+    font-size: 1.2rem;
 }
 .text-content{
     overflow: hidden;
